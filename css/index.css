@@ -70,9 +70,10 @@ main {
       "art6";
 }
 
-main article {
+.card {
     border-radius: 10px;
-    box-shadow: 0px 0px 3px silver;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
     display: flex;
     flex: 1 100%;
     flex-flow: row;
@@ -82,29 +83,34 @@ main article {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #000;
 }
 
-main article h3 {
+figure {
+    display: flex;
+    margin: 0;
+}
+
+main .card h3 {
     font-size: 1em;
     margin-top: 5px;
     color: #ccc;
 }    
 
-main article h2 {
+main .card h2 {
     font-size: 1.5em;
     color: slategray;
 }    
 
-main article p {
+main .card p {
     font-size: .9em;
     margin-left: 5px;
     flex: 0 1 80%;
     align-items: center;
 }    
 
-main article:hover {
-    box-shadow: 0px 0px 1px 1px steelblue;
+main .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     cursor: pointer;
 }
 
