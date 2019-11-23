@@ -1,0 +1,116 @@
+.main-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "profil"
+    "social";
+    justify-content: center;
+    align-items: center;
+}
+
+.user-profil {
+    
+    grid-area: profil;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "avatar"
+    "name"
+    "title"
+    "company"
+    "bio";
+    list-style: none;
+    gap: 15px;
+    max-width: 400px;
+    margin: 10px;
+    margin-top: 75px;
+}
+
+.user-profil li {
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px silver;
+    display: flex;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    max-width: 400px;
+    padding: 5px;
+}
+
+.social-media {
+    grid-area: social;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "icon-1"
+    "icon-2"
+    "icon-3";
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+.avatar {
+    max-width: 400px;
+    max-height: 400px;
+    grid-area: avatar;
+    border-radius: 20px;
+}
+
+.name {
+    grid-area: name;
+}
+
+.title {
+    grid-area: title;
+}
+
+.company {
+    grid-area: company;
+}
+
+.bio {
+    grid-area: bio;
+}
+
+.fa-twitter-square {
+    grid-area: icon-1;
+}
+
+.fa-facebook-square {
+    grid-area: icon-2;
+}
+
+.fa-linkedin {
+    grid-area: icon-3;
+}
+
+.fab {
+    font-size: 6em;
+    color: cornflowerblue;
+}
+
+@media(min-width: 900px) {
+    .main-container {
+        grid-template-areas: 
+        "profil social";
+        border-radius: 10px;
+        box-shadow: 0px 0px 3px silver;
+        max-width: 850px;
+        margin-top: 110px;
+        margin-bottom: 35px;
+        padding-top: 20px;
+    }
+
+    .social-media{
+        margin: auto;
+        min-width: 160px;
+    }
+
+    .fab {
+        font-size: 10em;
+    }
+
+}
