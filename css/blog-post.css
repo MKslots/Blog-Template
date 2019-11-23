@@ -23,7 +23,7 @@
     "bio";
     list-style: none;
     gap: 15px;
-    max-width: 350px;
+    max-width: 325px;
     margin: 10px;
     margin-top: 75px;
 }
@@ -34,7 +34,7 @@
     display: flex;
     flex-basis: auto;
     flex-wrap: wrap;
-    max-width: 350px;
+    max-width: 325px;
     padding: 5px;
 }
 
@@ -53,8 +53,8 @@
 }
 
 .avatar {
-    max-width: 350px;
-    max-height: 350px;
+    max-width: 325px;
+    max-height: 325px;
     grid-area: avatar;
     border-radius: 20px;
 }
