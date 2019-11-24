@@ -89,6 +89,18 @@ a {
 figure {
     display: flex;
     margin: 0;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+figcaption {
+    background-color: slategray;
+    color: #fff;
+    position: absolute;
+    margin-top: 5px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
 }
 
 main .card h3 {
@@ -145,6 +157,7 @@ main .card:hover {
 
 .rnd-img {
     margin: 5px;
+    margin-top: 21px;
     width: 100px;
     border-radius: 5px;
 }
@@ -177,6 +190,11 @@ main .card:hover {
     }
 
     .rnd-img {
+        width: 200px;
+        margin-top: 5px;
+    }
+
+    figcaption {
         width: 200px;
     }
 
@@ -218,8 +236,13 @@ main .card:hover {
     }
 
     .rnd-img {
+        margin-top: 5px;
         width: 125px;
-    }          
+    } 
+    
+    figcaption {
+        width: 125px;
+    }
     
     .logo {
         margin-top: 75px;
